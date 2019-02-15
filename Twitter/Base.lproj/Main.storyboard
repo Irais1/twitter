@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="LT1-CM-fMO">
             <objects>
                 <tableViewController id="TF2-tq-esY" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="TF2-tq-esY" id="ACn-9B-liY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1eE-0B-MJ3"/>
+                    <navigationItem key="navigationItem" title="Home" id="1eE-0B-MJ3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZt-v3-AOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +46,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cZt-51-EM1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.76653493989999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="TF2-tq-esY" kind="relationship" relationship="rootViewController" id="Jkk-iY-IOe"/>
