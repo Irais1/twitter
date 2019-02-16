@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="LT1-CM-fMO">
             <objects>
-                <tableViewController id="TF2-tq-esY" sceneMemberID="viewController">
+                <tableViewController id="TF2-tq-esY" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zmS-vd-zS3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,14 @@
                             <outlet property="delegate" destination="TF2-tq-esY" id="ACn-9B-liY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="1eE-0B-MJ3"/>
+                    <navigationItem key="navigationItem" title="Home" id="1eE-0B-MJ3">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="alV-16-zkz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="TF2-tq-esY" id="H0r-pC-9sD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZt-v3-AOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
