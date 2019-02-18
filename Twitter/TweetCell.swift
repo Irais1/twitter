@@ -1,4 +1,4 @@
-//
+ //
 //  TweetCell.swift
 //  Twitter
 //
@@ -10,6 +10,10 @@ import UIKit
 
 class TweetCell: UITableViewCell {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var tweetContentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
